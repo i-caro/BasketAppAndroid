@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BasketApp</string>
+    <string name="LoginFragment">LoginFragment</string>
+    <string name="RegisterFragment">RegisterFragment</string>
 </resources>
