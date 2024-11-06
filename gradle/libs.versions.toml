@@ -3,10 +3,12 @@ agp = "8.6.0"
 androidxConstraintlayout = "2.1.4"
 converterGson = "2.11.0"
 fragmentKtx = "1.8.5"
+googleHiltAndroid = "2.51.1"
 googleMaterial = "1.6.0"
 hiltAndroid = "2.52"
 hiltAndroidVersion = "2.48.1"
 hiltCompiler = "2.48.1"
+hiltCompilerVersion = "2.51.1"
 kotlin = "1.9.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -44,8 +46,10 @@ constraintlayout-v214 = { module = "androidx.constraintlayout:constraintlayout",
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
 hilt-android-v2481 = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidVersion" }
+hilt-android-v2511 = { module = "com.google.dagger:hilt-android", version.ref = "googleHiltAndroid" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
 hilt-compiler-v2481 = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompiler" }
+hilt-compiler-v2511 = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompilerVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

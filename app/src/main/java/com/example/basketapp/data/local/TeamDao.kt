@@ -18,10 +18,10 @@ interface TeamDao {
     @Update
     suspend fun update(team: TeamEntity)
 
-    suspend fun delete(team: TeamEntity)
+    //suspend fun delete(team: TeamEntity)
 
     @Query("SELECT * FROM team")
     suspend fun readAll():List<TeamEntity>
     @Query("SELECT * FROM team")
-    suspend fun observeAll(): Flow<List<TeamEntity>>
+    fun observeAll(): Flow<List<TeamEntity>>
 }

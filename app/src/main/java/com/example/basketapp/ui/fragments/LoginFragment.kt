@@ -16,12 +16,12 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.btnLogin).setOnClickListener {
-            // Lógica para iniciar sesión
+
         }
 
         view.findViewById<TextView>(R.id.tvRegister).setOnClickListener {
-            // Navegar al RegisterFragment
-            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment2)
         }
     }
 }

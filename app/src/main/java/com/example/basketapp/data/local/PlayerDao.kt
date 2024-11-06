@@ -18,10 +18,10 @@ interface PlayerDao {
     @Update
     suspend fun update(player: PlayerEntity)
 
-    suspend fun delete(player: PlayerEntity)
+    //suspend fun delete(player: PlayerEntity)
 
     @Query("SELECT * FROM player")
     suspend fun readAll():List<PlayerEntity>
     @Query("SELECT * FROM player")
-    suspend fun observeAll(): Flow<List<PlayerEntity>>
+    fun observeAll(): Flow<List<PlayerEntity>>
 }

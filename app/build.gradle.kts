@@ -59,8 +59,8 @@ android {
         implementation(libs.androidx.room.runtime)
         kapt(libs.androidx.room.compiler)
         implementation(libs.androidx.room.ktx.v260)
-        implementation(libs.hilt.android.v2481)
-        kapt(libs.hilt.compiler.v2481)
+        implementation(libs.hilt.android.v2511)
+        kapt(libs.hilt.compiler.v2511)
         implementation (libs.material.v160)
     }
     kapt {

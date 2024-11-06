@@ -30,6 +30,7 @@ class AppModule {
     }
 
     @Provides
-    fun providePlayerDao(AppDatabase: AppDatabase):PlayerDao = AppDatabase.playerDao()
-    fun provideTeamDao(AppDatabase: AppDatabase):TeamDao = AppDatabase.teamDao()
+    fun providePlayerDao(appDatabase: AppDatabase):PlayerDao = appDatabase.playerDao()
+    @Provides
+    fun provideTeamDao(appDatabase: AppDatabase):TeamDao = appDatabase.teamDao()
 }

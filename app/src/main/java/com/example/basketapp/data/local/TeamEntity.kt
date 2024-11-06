@@ -1,5 +1,6 @@
 package com.example.basketapp.data.local
 
+import androidx.room.DatabaseView
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 

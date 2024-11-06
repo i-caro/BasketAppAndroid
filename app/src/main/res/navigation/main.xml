@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navgraph"
+    android:id="@+id/main.xml"
     app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
-        android:label="@string/LoginFragment"
-        android:name="com.example.basketapp.ui.fragments.LoginFragment">
+        android:name="com.example.basketapp.ui.fragments.LoginFragment"
+        android:label="LoginFragment" >
         <action
-            android:id="@+id/action_loginFragment_to_registerFragment"
+            android:id="@+id/action_loginFragment_to_registerFragment2"
             app:destination="@id/registerFragment" />
     </fragment>
-
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.basketapp.ui.fragments.RegisterFragment"
-        tools:layout="@layout/fragment_register"
-        android:label="@string/RegisterFragment"/>
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
